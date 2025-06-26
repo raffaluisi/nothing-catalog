@@ -23,7 +23,18 @@
         <img src="images/silence.jpg" alt="Stillness" class="w-full h-48 object-cover rounded-md mb-4" />
         <h2 class="text-xl font-semibold mb-2">Stillness (Model 404)</h2>
         <p class="text-gray-700 italic mb-4">No background music. No notifications. No need to charge. Best experienced with eyes closed.</p>
-        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Pause Now</button>
+
+          <div class="relative inline-block">
+          <!-- Tooltip -->
+          <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
+            Purchase not possible. Already owned.
+          </div>
+
+          <!-- Button -->
+          <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
+            Pause Now
+          </button>
+        </div>
       </div>
 
       <!-- Product Card 2 -->
@@ -31,7 +42,18 @@
         <img src="images/wooden-spoon.jpg" alt="Unoptimized Spoon" class="w-full h-48 object-cover rounded-md mb-4" />
         <h2 class="text-xl font-semibold mb-2">Unoptimized Spoon</h2>
         <p class="text-gray-700 italic mb-4">No ergonomic grip. No double-walled innovation. Just a spoon.</p>
-        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Use Slowly</button>
+
+          <div class="relative inline-block">
+          <!-- Tooltip -->
+          <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
+            Purchase not possible. Already owned.
+          </div>
+
+          <!-- Button -->
+          <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
+            Use Slowly
+          </button>
+        </div>
       </div>
 
       <!-- Product Card 3 -->
@@ -39,23 +61,39 @@
         <img src="images/idea-forgot.jpg" alt="The Idea You Forgot" class="w-full h-48 object-cover rounded-md mb-4" />
         <h2 class="text-xl font-semibold mb-2">The Idea You Forgot</h2>
         <p class="text-gray-700 italic mb-4">It was brilliant, probably. It floated away. Let it go again.</p>
-        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Forget Again</button>
+
+          <div class="relative inline-block">
+          <!-- Tooltip -->
+          <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
+            Purchase not possible. Already owned.
+          </div>
+
+          <!-- Button -->
+          <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
+            Forget Again
+          </button>
+        </div>
       </div>
 
+
+
       <!-- Product Card 4 -->
-      <div class="bg-white rounded-xl shadow p-6 hover:shadow-md transition">
+      <div class="bg-white rounded-xl shadow p-6 hover:shadow-md transition relative">
         <img src="images/brain.jpg" alt="The Brain" class="w-full h-48 object-cover rounded-md mb-4" />
         <h2 class="text-xl font-semibold mb-2">The Brain</h2>
         <p class="text-gray-700 italic mb-4">Unstreamed. Unscrolled. Unfed by ads. It’s still here, waiting to think something real.</p>
-        <!-- Tooltip Message -->
-        <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
-          Purchase not possible. Already owned.
-        </div>
 
-        <!-- Button -->
-        <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
-          Think Freely
-        </button>
+        <div class="relative inline-block">
+          <!-- Tooltip -->
+          <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
+            Purchase not possible. Already owned.
+          </div>
+
+          <!-- Button -->
+          <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
+            Think Freely
+          </button>
+        </div>
       </div>
       
       <!-- Product Card 5 -->
@@ -63,7 +101,20 @@
         <img src="images/unshared.jpg" alt="The Unshared Moment" class="w-full h-48 object-cover rounded-md mb-4" />
         <h2 class="text-xl font-semibold mb-2">The Unshared Moment</h2>
         <p class="text-gray-700 italic mb-4">No likes. No record. No digital trail. You were there. And that’s enough.</p>
-        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Live It</button>
+      
+          <div class="relative inline-block">
+          <!-- Tooltip -->
+          <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
+            Purchase not possible. Already owned.
+          </div>
+
+          <!-- Button -->
+          <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
+            Live It
+          </button>
+        </div>
+      </div>
+
       </div>
       
       <!-- Product Card 6 -->
@@ -71,8 +122,20 @@
         <img src="images/leaf.jpg" alt="The Manual Leaf" class="w-full h-48 object-cover rounded-md mb-4" />
         <h2 class="text-xl font-semibold mb-2">The Leaf</h2>
         <p class="text-gray-700 italic mb-4">Found under foot. Unbranded. Unsold. Made by another creature</p>
-        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">Observe Nature</button>
+
+          <div class="relative inline-block">
+          <!-- Tooltip -->
+          <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
+            Purchase not possible. Already owned.
+          </div>
+
+          <!-- Button -->
+          <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
+            Observe Nature
+          </button>
+        </div>
       </div>
+
     </main>
 
     <footer class="text-center mt-16 text-sm text-gray-500 py-6">
@@ -80,8 +143,7 @@
     </footer>
     <script>
       function showMessage(button) {
-        const card = button.parentElement;
-        const message = card.querySelector(".purchase-message");
+        const message = button.parentElement.querySelector(".purchase-message");
 
         message.classList.remove("opacity-0", "pointer-events-none");
         message.classList.add("opacity-100");
