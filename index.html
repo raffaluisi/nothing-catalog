@@ -47,13 +47,15 @@
         <img src="images/brain.jpg" alt="The Brain" class="w-full h-48 object-cover rounded-md mb-4" />
         <h2 class="text-xl font-semibold mb-2">The Brain</h2>
         <p class="text-gray-700 italic mb-4">Unstreamed. Unscrolled. Unfed by ads. It’s still here, waiting to think something real.</p>
-         <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
-          Think Freely
-        </button>
-        <!-- Hidden Message -->
-        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
+        <!-- Tooltip Message -->
+        <div class="purchase-message absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 text-center bg-gray-100 text-gray-700 text-sm rounded-lg shadow-md px-4 py-2 opacity-0 transition-opacity duration-300 pointer-events-none z-10">
           Purchase not possible. Already owned.
         </div>
+
+        <!-- Button -->
+        <button onclick="showMessage(this)" class="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300">
+          Think Freely
+        </button>
       </div>
       
       <!-- Product Card 5 -->
@@ -77,17 +79,18 @@
       Cart (99) – Already full. | 404mind © 2025
     </footer>
     <script>
-  function showMessage(button) {
-    const message = button.nextElementSibling;
-    message.classList.remove("opacity-0", "pointer-events-none");
-    message.classList.add("opacity-100");
+      function showMessage(button) {
+        const card = button.parentElement;
+        const message = card.querySelector(".purchase-message");
 
-    // Hide again after 3 seconds
-    setTimeout(() => {
-      message.classList.add("opacity-0", "pointer-events-none");
-      message.classList.remove("opacity-100");
-    }, 3000);
-  }
-</script>
+        message.classList.remove("opacity-0", "pointer-events-none");
+        message.classList.add("opacity-100");
+
+        setTimeout(() => {
+          message.classList.add("opacity-0", "pointer-events-none");
+          message.classList.remove("opacity-100");
+        }, 3000);
+      }
+    </script>
   </body>
 </html>
